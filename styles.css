@@ -7,6 +7,17 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
+
+    /* no click  */
+    user-select: none;
+    -webkit-user-select: none; /* For Safari */
+    -moz-user-select: none;    /* For Firefox */
+    -ms-user-select: none;     /* For Internet Explorer/Edge */
+
+    /* Disable right-click */
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    -khtml-user-select: none;
 }
 
 /* Default Light Mode */
