@@ -22,3 +22,26 @@ window.addEventListener('load', function() {
 document.getElementById('close-modal').addEventListener('click', function() {
     document.getElementById('welcome-modal').style.display = 'none';
 });
+document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable text selection with keyboard shortcuts
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'v' || e.key === 'x')) {
+                e.preventDefault();
+            }
+        });
+
+
+//no click 
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable text selection with keyboard shortcuts
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'v' || e.key === 'x')) {
+                e.preventDefault();
+            }
+        });
